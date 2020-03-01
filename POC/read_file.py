@@ -38,9 +38,10 @@ def solve_one_line(array: list):
 
 arr = []
 res = []
-with open("simple_input.txt") as f:
+#now send every 3 lines. need to handle \n
+with open("input_Q1a.txt") as f:
     for i, line in enumerate(f):
         arr.append(line)
         if i % 2 == 0 and i != 0:
-            solve_one_line(arr[i-2:i+1])
-# print(res)
+            res.append(solve_one_line(arr[i-2:i+1]))
+print(res)
