@@ -16,4 +16,9 @@ cd ni-inetrview
 npm start
 
 ## How to run backend:
+cd POC
+python read_file.py
 
+
+**  POC/read_file.py can convert 3 lines of asci into integer. frontend have only mockup for input.
+no integration between the two
